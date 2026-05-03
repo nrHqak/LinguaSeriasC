@@ -51,8 +51,8 @@ namespace LinguaSeries.Forms
             var sidebar = new Panel { Dock = DockStyle.Left, Width = 220, BackColor = Theme.Card, Padding = new Padding(16, 18, 16, 18) };
             sidebar.Controls.Add(new Label { Text = "LinguaSeries", ForeColor = Theme.Text, Font = new Font("Segoe UI", 16, FontStyle.Bold), Dock = DockStyle.Top, Height = 50 });
 
-            var navPanel = new FlowLayoutPanel { Dock = DockStyle.Fill, FlowDirection = FlowDirection.TopDown, WrapContents = false, Padding = new Padding(0, 20, 0, 0) };
-            foreach (var section in new[] { "Home", "Recommended", "Favorites", "Progress", "Settings", "About" })
+            var navPanel = new FlowLayoutPanel { Dock = DockStyle.Fill, FlowDirection = FlowDirection.TopDown, WrapContents = false, Padding = new Padding(0, 8, 0, 0), AutoScroll = true };
+            foreach (var section in new[] { "Home", "Recommended", "Favorites", "Progress" })
             {
                 var btn = new RoundedButton
                 {
@@ -85,11 +85,14 @@ namespace LinguaSeries.Forms
             _sectionTitle.ForeColor = Theme.Text;
             _sectionTitle.Font = new Font("Segoe UI", 14, FontStyle.Bold);
             _sectionTitle.AutoSize = true;
-            _sectionTitle.Left = 360;
-            _sectionTitle.Top = 25;
+            _sectionTitle.Left = 380;
+            _sectionTitle.Top = 24;
 
-            var levelBadge = new Label { Text = $"Level: {_level}", ForeColor = Theme.Accent, Font = new Font("Segoe UI", 11, FontStyle.Bold), AutoSize = true, Left = 520, Top = 27 };
-            var avatar = new Label { Text = "👤", AutoSize = true, ForeColor = Theme.Text, Left = 640, Top = 24, Font = new Font("Segoe UI Emoji", 13) };
+            _search.Left = 24;
+            _search.Top = 22;
+
+            var levelBadge = new Label { Text = $"Level: {_level}", ForeColor = Theme.Accent, Font = new Font("Segoe UI", 11, FontStyle.Bold), AutoSize = true, Left = 520, Top = 26 };
+            var avatar = new Label { Text = "👤", AutoSize = true, ForeColor = Theme.Text, Left = 640, Top = 23, Font = new Font("Segoe UI Emoji", 13) };
 
             top.Controls.Add(_search);
             top.Controls.Add(_sectionTitle);
@@ -127,12 +130,7 @@ namespace LinguaSeries.Forms
                 case "Progress":
                     RenderProgress();
                     break;
-                case "Settings":
-                    _contentPanel.Controls.Add(Placeholder("Settings", "Theme: Dark Premium\nNotifications: Enabled\nLanguage: English"));
-                    break;
-                case "About":
-                    _contentPanel.Controls.Add(Placeholder("About", "LinguaSeries helps you learn English through movies and series."));
-                    break;
+
             }
         }
 
@@ -166,12 +164,5 @@ namespace LinguaSeries.Forms
             _contentPanel.Controls.Add(panel);
         }
 
-        private Control Placeholder(string title, string text)
-        {
-            var panel = new Panel { Dock = DockStyle.Top, Height = 220, BackColor = Theme.Card, Padding = new Padding(24) };
-            panel.Controls.Add(new Label { Text = title, ForeColor = Theme.Text, Font = new Font("Segoe UI", 16, FontStyle.Bold), AutoSize = true, Top = 16, Left = 24 });
-            panel.Controls.Add(new Label { Text = text, ForeColor = Theme.SecondaryText, Font = new Font("Segoe UI", 11), AutoSize = true, Top = 64, Left = 24 });
-            return panel;
-        }
     }
 }
