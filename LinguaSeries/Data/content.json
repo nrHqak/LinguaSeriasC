@@ -1,0 +1,11 @@
+[
+  {"title":"Friends","genre":"Comedy","level":"A1","description":"Short dialogs and everyday situations.","rating":8.9,"image":"friends.jpg","watchLink":"https://www.netflix.com/title/70153404","vocabularyWords":["hello","coffee","friendship"]},
+  {"title":"Extra","genre":"Sitcom","level":"A1","description":"Educational sitcom for learners.","rating":8.2,"image":"extra.jpg","watchLink":"https://www.youtube.com/results?search_query=extra+english","vocabularyWords":["apartment","job","weekend"]},
+  {"title":"Peppa Pig","genre":"Animation","level":"A2","description":"Simple grammar and clear pronunciation.","rating":7.0,"image":"peppa.jpg","watchLink":"https://www.youtube.com/@PeppaPigOfficial","vocabularyWords":["family","playground","muddy"]},
+  {"title":"The Office","genre":"Comedy","level":"B1","description":"Natural speech and office vocabulary.","rating":9.0,"image":"office.jpg","watchLink":"https://www.peacocktv.com/stream-tv/the-office","vocabularyWords":["meeting","deadline","manager"]},
+  {"title":"Harry Potter","genre":"Fantasy","level":"B1","description":"Familiar story with expanding vocabulary.","rating":8.5,"image":"hp.jpg","watchLink":"https://www.max.com","vocabularyWords":["wizard","spell","courage"]},
+  {"title":"Brooklyn 99","genre":"Comedy","level":"B2","description":"Fast conversations and humor.","rating":8.4,"image":"b99.jpg","watchLink":"https://www.peacocktv.com","vocabularyWords":["detective","evidence","suspect"]},
+  {"title":"Sherlock","genre":"Crime","level":"C1","description":"Advanced British English and deduction terms.","rating":9.1,"image":"sherlock.jpg","watchLink":"https://www.bbc.co.uk/iplayer","vocabularyWords":["deduction","clue","motive"]},
+  {"title":"Suits","genre":"Drama","level":"C1","description":"Business and legal vocabulary.","rating":8.4,"image":"suits.jpg","watchLink":"https://www.netflix.com/title/70195800","vocabularyWords":["lawsuit","negotiation","contract"]},
+  {"title":"Breaking Bad","genre":"Drama","level":"C1","description":"Complex themes and varied register.","rating":9.5,"image":"bb.jpg","watchLink":"https://www.netflix.com/title/70143836","vocabularyWords":["chemistry","consequence","strategy"]}
+]
